@@ -26,6 +26,53 @@
     height: 33rem;
     position: absolute;
 }
+/* .fade-in{
+    transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
 .updiv{
     margin-top: 5%;
     /* border: 1px solid rgb(212, 32, 137); */
@@ -96,25 +143,33 @@ li{display: inline;
     width: 90%;
     height: 8rem;
     text-align: left;
+    font-family: sans-serif;
 }
 
 .c{
     /* border: 1px solid blue; */
     background-color: rgb(225, 228, 228);
-    width: 50%;
+    width: 400px;
     height: 3rem;
     margin-bottom: 3rem;
     text-align: center;
     font-size: 120%;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 1rem;
     padding-top: 2.5%;
+    cursor: pointer;
 }
-
+.c:hover{
+    color: white;
+    background-color: rgb(13, 36, 36);
+    transition: .3s ease;
+}
 .more{
-    width: 20%;
-    height: 2rem;
+    width: 40px;
+    height: 1rem;
 
 }
 
@@ -128,9 +183,14 @@ li{display: inline;
 }
 
 button{
-    width: 50%;
-    height: 4.5rem;
+    width: 50px;
+    height: 90px;
     background-color: rgb(31, 30, 30);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(129, 156, 41);
+    transition: .5s ease;
 }
 
 .arrow{
