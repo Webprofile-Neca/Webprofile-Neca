@@ -8,6 +8,9 @@ body {
 }
 .flex-row {
     display: flex;
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid red; */
 }
 .about {
     width: 40%;
