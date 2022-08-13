@@ -3,9 +3,10 @@ import'./Webprofile.css'
 import arrowicon from './arrowicon.png'
 import nextt from './nextt.png'
 import previous11 from './previous11.png'
+import userImage from './desktop-image-hero-1.jpg';
+import usp from './Pictures/5.jpg';
+function Webprofile({currentUserId, setCurrentUserId, currentUser, setCurrentUser}) {
 
-
-function Webprofile() {
   return (
     <div className='main'>
       <div className='firstdiv'>
@@ -14,6 +15,7 @@ function Webprofile() {
              <nav><li>Home</li><li>Mission</li><li>About</li><li>Contact</li></nav>
          
          </div>
+         <img src={usp} alt="profile-picture" className="profile-picture"  />
      
              
      </div>
