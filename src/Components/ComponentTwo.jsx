@@ -3,7 +3,8 @@ import './ComponentTwo.css';
 import dark from './dark.jpg';
 import light from './light.jpg';
 
-function ComponentTwo() {
+function ComponentTwo({users, currentUserId}) {
+  let currentUser = users.find((user) => user.id === currentUserId);
   return (
     <div className='flex-row'>
         <div className='dark'>
@@ -12,10 +13,10 @@ function ComponentTwo() {
         <div className='about'>
             <div className='about-me'>
                <h2>About Me</h2>
-                <p>Name: Momoh Abdulrasheed</p>
-                <p>I.D No: ITF/NECA/No-5</p>
-                <p>Skills: HTML/CSS, Javascript, React.Js.</p>
-                <p>Connect with me: github.com/momohrasheed06</p> 
+                <p>Name: {currentUser.name}</p>
+                {/* <p>I.D No: ITF/NECA/No-5</p> */}
+                <p>Skills: {currentUser.skills}</p>
+                <p>Connect with me: <a className="github-link" href={currentUser.github_link}>{currentUser.github_link}</a></p> 
             </div>    
         </div>
         <div className='light'>

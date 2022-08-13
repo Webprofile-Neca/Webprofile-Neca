@@ -30,3 +30,11 @@ body {
 .about-me p {
     color: gray;
 }
+.github-link{
+    color: gray;
+    text-decoration: none;
+}
+.github-link:hover{
+    transition: .3s ease;
+    font-size: 20px;
+}
