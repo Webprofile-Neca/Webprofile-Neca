@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-weight: 500;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+.container {
+    border-radius: 10px;
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 2rem;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    display: flex;
+}
+.image {
+    border-radius: 10px;
+    width: 50%;
+    height: 70vh;
+}
+img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 70vh;
+}
+.about {
+    width: 50%;
+}
+.about-me {
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+.about-me span {
+    color: hsl(277, 64%, 61%);
+}
+.about-me p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.main {
+    display: flex;
+    align-items: center;
+
+}
+.left-angle, .right-angle {
+    margin: 6rem;
+    font-size: 5rem;
+    font-family: Tahoma;
+    color: hsl(277, 64%, 61%);
+    background-color:hsl(244, 38%, 16%);
+    border: none;
+    cursor: pointer;
+}
