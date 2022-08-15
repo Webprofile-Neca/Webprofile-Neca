@@ -5,7 +5,7 @@ function InputSearch({setCurrentUserId, currentInput, setCurrentInput, suggestio
   return (
     <div className='input-search'>
         <h1>WEBPROFILES</h1>
-        <input type="text" placeholder='Search Profile Name' value={currentInput} onChange={(event) => { filterSuggestions(event.target.value) }} />
+        <input type="text" className='input' placeholder='Search Profile Name' value={currentInput} onChange={(event) => { filterSuggestions(event.target.value) }} />
         <button>Search</button>
         <div className='suggestions'>
            {suggestions.map((user) => (

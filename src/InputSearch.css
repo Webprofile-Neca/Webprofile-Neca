@@ -10,7 +10,7 @@ body {
     color: white;
 }
 .input-search {
-    width: 70%;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
 }
@@ -35,7 +35,15 @@ body {
     background-color: hsl(277, 64%, 61%);
 }
 .suggestions{
-    background-color: blue;
+    width: 500px;
+    background-color: rgb(126, 5, 100);
     cursor: pointer;
     position: absolute;
+    /* visibility: hidden; */
+}
+.input{
+    outline: none;
+}
+.input:focus + .suggestions{
+    visibility: visible;
 }

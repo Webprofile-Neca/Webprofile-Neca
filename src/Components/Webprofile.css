@@ -1,0 +1,200 @@
+.main{
+      display: flex;
+      margin: auto;
+      width: 90%;
+}
+
+.firstdiv{
+    
+         width: 58%;
+         height: 33rem;
+         /* background-image: url(desktop-image-hero-1.jpg);
+         background-size: 100%;
+         background-repeat: no-repeat; */
+         /* background: red; */
+         display: flex;
+         flex-direction: column;
+         /* align-items: flex-start; */
+         justify-content: flex-start;
+         /* background-image: url(desktop-image-hero-1.jpg);
+         background-size: 101%;
+         background-repeat: no-repeat; */
+    
+}
+.profile-picture{
+    width: 715px;
+    height: 33rem;
+    position: absolute;
+}
+/* .fade-in{
+    transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+.updiv{
+    margin-top: 5%;
+    /* border: 1px solid rgb(212, 32, 137); */
+    width: 58%;
+    height: 3rem;
+    display: flex;
+    
+    z-index: 1;
+}
+
+.title{
+    /* border: 1px solid blue; */
+    width: 30%;
+    height: 3rem;
+    font-size: 140%;
+    font-weight: bold;
+    color: white;
+    
+}
+
+nav{
+    /* border: 1px solid blue; */
+    width: 60%;
+    height: inherit;
+
+}
+
+li{display: inline;  
+    margin-left: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+.seconddiv{
+    /* border: 1px solid blue; */
+    width: 42%;
+    height: 33rem;
+      
+}
+
+.up1{
+    margin: auto;
+    /* border: 1px solid blue; */
+    width: 70%;
+    height: 22rem;
+    margin-top: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+      
+}
+
+.a{
+    /* border: 1px solid blue; */
+    width: 90%;
+    height: 7rem;
+    text-align: left;
+    font-size: 110%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0;
+}
+
+
+.b{
+    /* border: 1px solid blue; */
+    width: 90%;
+    height: 8rem;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.c{
+    /* border: 1px solid blue; */
+    background-color: rgb(225, 228, 228);
+    width: 400px;
+    height: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 120%;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    padding-top: 2.5%;
+    cursor: pointer;
+}
+.c:hover{
+    color: white;
+    background-color: rgb(13, 36, 36);
+    transition: .3s ease;
+}
+.more{
+    width: 40px;
+    height: 1rem;
+
+}
+
+
+.down2{
+    /* border: 1px solid blue; */
+    width: 25%;
+    height: 4.5rem;
+      
+
+}
+
+button{
+    width: 50px;
+    height: 90px;
+    background-color: rgb(31, 30, 30);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(129, 156, 41);
+    transition: .5s ease;
+}
+
+.arrow{
+    width: 50%;
+    height: 4.5rem;
+}
+
