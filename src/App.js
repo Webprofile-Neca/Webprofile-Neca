@@ -1,32 +1,33 @@
 import React, {useState} from 'react';
-import './App.css';
-import Webprofile from './Components/Webprofile';
+import InputSearch from './InputSearch';
+import WebProfiles from './WebProfiles';
 
-import SearchBox from './Components/SearchBox';
-import users from './Components/items.json';
-import ComponentTwo from './Components/ComponentTwo';
-
-
+import users from './items.json';
 
 function App() {
-  const [currentUserId, setCurrentUserId] = useState(1);
-  const [searchInput, setSearchInput] = useState('');
-  const [searchSuggestions, setSearchSuggestions] = useState([]);
-  const filterSuggestions = (searchUpdate) => {
-    setSearchInput(searchUpdate);
-    if(searchUpdate)
-      setSearchSuggestions(users.filter((user) => user.name.toLowerCase().includes(searchUpdate.toLowerCase())));
-    else setSearchSuggestions([]);
-  }
-  return (
-    <div className="App">
-      <SearchBox searchInput={searchInput} searchSuggestions={searchSuggestions} filterSuggestions={filterSuggestions} setCurrentUserId={setCurrentUserId} setSearchSuggestions={setSearchSuggestions} />
-      <Webprofile users={users} currentUserId={currentUserId} setCurrentUserId={setCurrentUserId} />
-    <ComponentTwo users={users} currentUserId={currentUserId} />
 
+const [currentUserId, setCurrentUserId] = useState(1);
+const [currentInput, setCurrentInput] = useState("");
+const [suggestions, setSuggestions] = useState([]);
+
+const filterSuggestions = (searchUpdate) => {
+  setCurrentInput(searchUpdate);
+  if (searchUpdate){
+    setSuggestions(
+      users.filter((user) => user.name.toLowerCase().includes(searchUpdate.toLowerCase()))
+    );
+  }else{
+    setSuggestions([]);
+  }
+  
+}
+
+  return (
+    <div>
+      <InputSearch setCurrentUserId={setCurrentUserId } currentInput={currentInput} setCurrentInput={setCurrentInput} suggestions={suggestions} setSuggestions={setSuggestions} filterSuggestions={filterSuggestions} />
+      <WebProfiles users={users} currentUserId={currentUserId} setCurrentUserId={setCurrentUserId}/>
     </div>
-  );
+  )
 }
 
 export default App;
-// Harrison visited :)
