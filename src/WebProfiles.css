@@ -60,3 +60,7 @@ img {
     border: none;
     cursor: pointer;
 }
+button:hover{
+    transition: .3s ease;
+    border-radius: 10px;
+}
